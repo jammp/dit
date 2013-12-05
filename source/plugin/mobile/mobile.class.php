@@ -294,13 +294,13 @@ class mobileplugin_mobile extends base_plugin_mobile {
 		}
 		if(IN_MOBILE === '1' || IN_MOBILE === 'yes' || IN_MOBILE === true) {
 			$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
-			if(strpos($useragent, 'iphone') !== false || strpos($useragent, 'ios') !== false) {
-				return lang('plugin/mobile', 'mobile_tip_ios');
-			} elseif(strpos($useragent, 'android') !== false) {
-				return lang('plugin/mobile', 'mobile_tip_android');
-			} elseif(strpos($useragent, 'windows phone') !== false) {
-				return lang('plugin/mobile', 'mobile_tip_wp7');
-			}
+			//if(strpos($useragent, 'iphone') !== false || strpos($useragent, 'ios') !== false) {
+			//	return lang('plugin/mobile', 'mobile_tip_ios');
+			//} elseif(strpos($useragent, 'android') !== false) {
+			//	return lang('plugin/mobile', 'mobile_tip_android');
+			//} elseif(strpos($useragent, 'windows phone') !== false) {
+			//	return lang('plugin/mobile', 'mobile_tip_wp7');
+			//}
 		}
 	}
 }
