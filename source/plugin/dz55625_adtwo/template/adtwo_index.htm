@@ -1,0 +1,44 @@
+<!--{block return}-->
+
+<link rel="stylesheet" type="text/css" href="source/plugin/dz55625_adtwo/images/body.css" />
+<script type="text/javascript" src="source/plugin/dz55625_adtwo/images/jquery.js"></script>
+<style type="text/css">
+
+.focusa{ overflow:hidden; width:{$adwidth}px; height:{$adheight}px; position:relative; margin:10px auto 0 }
+.f426x240{width:{$adwidth}px; height:{$adheight}px; overflow:hidden}
+.f426x240 img{width:{$adwidth}px; height:{$adheight}px}
+
+.rslides{width:100%;position:relative;list-style:none;padding:0}
+.rslides_nav{height:51px;width:31px;position:absolute;-webkit-tap-highlight-color:rgba(0,0,0,0);top:50%;left:0;opacity:0.5;text-indent:-9999px;overflow:hidden;text-decoration:none;background:url(source/plugin/dz55625_adtwo/images/i.png) no-repeat;margin-top:-28px}
+.rslides_nav:active{opacity:1.0}
+.rslides_nav.next{left:auto;background-position:-31px 0px;right:0}
+.rslides_tabs{margin:0 5px 5px 0; clear:both; text-align:center; position: absolute; bottom:0px; right:0px}
+.rslides_tabs li{display:inline;float:none;_float:left;*float:left;margin-right:5px}
+.rslides_tabs a{text-indent:-9999px;overflow:hidden;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;background:rgba(0,0,0, .2);background:#DDD;display:inline-block;_display:block;*display:block;width:9px;height:9px}
+.rslides_tabs .rslides_here a{background:rgba(0,0,0, .6);background:#838383}
+</style>
+
+<div class="wp cl">
+    <div class="focusa">
+        <ul class="rslides f426x240">
+         <!--{loop $huandengs $huandeng}-->
+            <li><a href="{$huandeng['urls']}"{$Clickwindow}><img src="{$huandeng['photos']}" /></a></li>
+         <!--{/loop}-->  
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="source/plugin/dz55625_adtwo/images/lrtk.js"></script>
+<script type="text/javascript">
+jq(function() {
+    jq(".f426x240").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 700,
+        maxwidth: {$adwidth}
+    });
+});
+</script>
+<!--{/block}-->
+

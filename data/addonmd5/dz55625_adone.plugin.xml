@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[dz55625_adone.plugin]]></item>
+	<item id="RevisionID"><![CDATA[7708]]></item>
+	<item id="SN"><![CDATA[2013120423BwVfMijPJb]]></item>
+	<item id="RevisionDateline"><![CDATA[1354258807]]></item>
+	<item id="Data">
+		<item id="/adone.class.php"><![CDATA[3f6b538bb3bf24697f81a48dd9ba5e43]]></item>
+		<item id="/discuz_plugin_dz55625_adone_SC_GBK.xml"><![CDATA[7db7678f8808235b1bb20dc6abdda586]]></item>
+		<item id="/discuz_plugin_dz55625_adone_SC_UTF8.xml"><![CDATA[d058b7596623bef67fc91a4efdc4aa36]]></item>
+		<item id="/discuz_plugin_dz55625_adone_TC_BIG5.xml"><![CDATA[8adb8af2092e8a9404a03b7ac90217ec]]></item>
+		<item id="/discuz_plugin_dz55625_adone_TC_UTF8.xml"><![CDATA[feb356628ad8b86a4b622a2e82b145ab]]></item>
+		<item id="/images/ad.gif"><![CDATA[0ed7ac177d1c7cfbca21904ba3239d75]]></item>
+		<item id="/images/gg_btn.png"><![CDATA[52c3a6111968d94deb419df83ed7d2ce]]></item>
+		<item id="/images/jquery-1.4.2.min.js"><![CDATA[10092eee563dec2dca82b77d2cf5a1ae]]></item>
+		<item id="/template/adone_index.htm"><![CDATA[01870fa6db6d3f62678a62c5b04373de]]></item>
+	</item>
+</root>

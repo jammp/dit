@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[dz55625_hadone.plugin]]></item>
+	<item id="RevisionID"><![CDATA[8206]]></item>
+	<item id="SN"><![CDATA[2013120422lbPdOpEle2]]></item>
+	<item id="RevisionDateline"><![CDATA[1368519142]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_dz55625_hadone_SC_GBK.xml"><![CDATA[8fe12edbb6b4183513d4103bfe8e8fab]]></item>
+		<item id="/discuz_plugin_dz55625_hadone_SC_UTF8.xml"><![CDATA[0869c84c432fb121a7c2c791800ee86a]]></item>
+		<item id="/discuz_plugin_dz55625_hadone_TC_BIG5.xml"><![CDATA[b73c69e9f5185cea2ec1695d66490920]]></item>
+		<item id="/discuz_plugin_dz55625_hadone_TC_UTF8.xml"><![CDATA[b343e9a73f2f7ae84a623364b1901d91]]></item>
+		<item id="/gengduo.inc.php"><![CDATA[1ff70a0093463e800bd432d084e78339]]></item>
+		<item id="/hadfun.inc.php"><![CDATA[531fa3685046912f2ab9df8be2b2067f]]></item>
+		<item id="/hadfun_uid.inc.php"><![CDATA[f67522eee467a9d614d04cdbca86021f]]></item>
+		<item id="/hadone.inc.php"><![CDATA[b5fafb7a63ec3b63f8b6a513556167cb]]></item>
+		<item id="/hadones.inc.php"><![CDATA[4cdffd45bdb4f9cf8cbf6a03fa19d98f]]></item>
+		<item id="/images/body.css"><![CDATA[524534417ae09ca776fbcda3980f6b41]]></item>
+		<item id="/images/i.png"><![CDATA[9c4021ea5e7ebd0c779c393c94905093]]></item>
+		<item id="/images/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/images/lrtk.js"><![CDATA[b8c59509f423aea2b41608cba47d6274]]></item>
+		<item id="/install.php"><![CDATA[d353c81c3757c8292627b088cf447b90]]></item>
+		<item id="/template/hadone_add.htm"><![CDATA[8056128f8bb2a13c032910e18ef9ccd0]]></item>
+		<item id="/template/hadone_edit.htm"><![CDATA[7f45c706b9c653553b030a6de9b0e19b]]></item>
+		<item id="/template/hadone_main.htm"><![CDATA[caf2a889b411a294bdb95d1f7611dd99]]></item>
+		<item id="/template/haodian.htm"><![CDATA[112a326b8397cc7645e8fc5e937475f1]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/uninstall.php"><![CDATA[eaf6766b08e9e874c51fb52961065082]]></item>
+	</item>
+</root>

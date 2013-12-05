@@ -1,0 +1,78 @@
+/*
+	[55625.COM!] (C)2001-2009 55625 Inc.
+	BY QQ:114512039  Lovenr
+*/
+
+html { _background-image: url(about:blank);_background-attachment: fixed; }
+
+.taopinpai{ width:100%; height: auto; margin:0 auto 10px;}
+
+ /*×óÁÐ¿í¶È*/
+.taopinpai .taoLeft{ width:800px; height:auto; background:#fff; margin-right:10px;} 
+.taoLeft .taoL{ width:798px; height:auto; border:1px #e3e3e3 solid; overflow:hidden; }
+		 .taoL h2{ height:35px; line-height:35px; border-bottom:1px #e3e3e3 solid;background:#FAFAFA}
+		 .taoL h2 strong{ font-size:16px; padding-left:15px; font-family:"Î¢ÈíÑÅºÚ"; width:150px; float:left;}
+		 .taoL h2 span{ float:right; width:100px; text-align:center}
+		 .taoL h2 span a{ font-weight:400; color:#0088CC;}
+		 .taoL ul{ padding:20px 0 0 20px; width:900px; overflow:hidden}
+		 .ie6 .taoL ul{ padding:20px 0 20px 20px; width:900px; overflow:hidden}
+		 .taoL ul li{ width:175px; height:95px; float:left; background:#999; margin-right:20px; margin-bottom:20px}
+		 .taoL ul li img{ width:175px; height:95px}
+
+.taoLeft .pages{height:35px; border:1px #e3e3e3 solid;background:#FAFAFA; border-top:none; padding:7px 7px 0px 0;}					
+					
+/*ÓÒÁÐ¿í¶È*/
+
+.taopinpai .taoRight{ width:150px; height: auto; }
+.taoRight .taoRClass{ width:150px; height: auto; }
+
+.taoRClass ul{}
+.taoRClass ul li{ width:100%; margin:0 auto; height:32px; line-height:32px; float:left}
+
+
+.boxgrid{ 
+width: 175px; 
+height: 95px; 
+overflow: hidden; 
+position: relative; 
+}
+.boxgrid img{ 
+position: absolute; 
+top: 0; 
+left: 0; 
+border: 0; 
+}
+.boxgrid p{ 
+	padding: 0 10px; 
+	color:#afafaf; 
+	font-weight:bold; 
+	font:10pt "Lucida Grande", Arial, sans-serif;
+	width:100%;
+	margin:0 auto;
+}
+
+.boxcaption{ 
+float: left; 
+position: absolute; 
+background: #000; 
+height: 16px;
+padding: 4px 0;
+width: 100%; 
+opacity: .8; 
+/* For IE 5-7 */
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+/* For IE 8 */
+-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.captionfull .boxcaption {
+top: 95px;
+left: 0;
+}
+.caption .boxcaption {
+top: 72px;
+left: 0;
+}
+.taoSearch{ width:138px; padding:5px; background:#FAFAFA; margin-top:10px; border:1px #e3e3e3 solid}
+.taoSearch .keyword{ width:130px;}
+.taoSearch .search-submit{ width:136px; height:25px; margin-top:5px;}
+

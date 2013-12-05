@@ -1,0 +1,38 @@
+{template common/header_ajax}
+<div class="userAddyh" style="width:400px">
+    <h2><strong>{lang dz55625_hadone:adedittitle}</strong><a href="javascript:;" onClick="hideWindow('$_G[gp_handlekey]');" class="flbc" title="{lang close}">{lang close}</a></h2>
+    <ul>
+        
+        <form method="post" enctype="multipart/form-data" action="plugin.php?id=dz55625_hadone:hadone&action=edit&applysubmitad=true" name="applyform">
+				<input type="hidden" name="referer" value="$_G[referer]">
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+                <input type="hidden" name="newid" value="{$_G['gp_aid']}" />
+                <table width="98%" border="1" bordercolor="#cccccc" style="margin:0 auto">
+
+					<tr>
+						<td width="200" height="35" bgcolor="#F2F2F2" align="center">{lang dz55625_hadone:adtname}</td>
+						<td colspan="2">&nbsp;<input type="text" name="name" value="$active[name]" style="width:258px; height:22px; line-height:22px;" /></td>
+					</tr>
+
+					<tr>
+						<td height="35" bgcolor="#F2F2F2" align="center">{lang dz55625_hadone:adpicurls}</td>
+						<td colspan="2">&nbsp;<input type="text" name="pic" value="$active[pic]" style="width:258px; height:22px; line-height:22px;" /></td>
+					</tr>
+                    
+					<tr>
+						<td height="35" bgcolor="#F2F2F2" align="center">{lang dz55625_hadone:adpiclink}</td>
+						<td colspan="2">&nbsp;<input type="text" name="tid" value="$active[tid]" style="width:258px; height:22px; line-height:22px;" /></td>
+					</tr>
+				</table>
+                <div style="text-align:center; margin:10px auto 0;">
+               
+					<button type="submit" name="applysubmitad" id="applysubmitad" value="true" class="pn pnp" /><strong>{lang dz55625_hadone:adtijiao}</strong></button>
+				    <button type="reset" name="sendreset" class="pn pnp" /><strong>{lang dz55625_hadone:adchexiao}</strong></button>
+				</div>
+
+</form>
+    
+    
+        </ul>
+</div>
+{template common/footer_ajax}

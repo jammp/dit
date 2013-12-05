@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[dz55625_yuyue.plugin]]></item>
+	<item id="RevisionID"><![CDATA[8511]]></item>
+	<item id="SN"><![CDATA[2013120420jtDL1ZL3AJ]]></item>
+	<item id="RevisionDateline"><![CDATA[1368519127]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_dz55625_yuyue_SC_GBK.xml"><![CDATA[1d9b03c6c6b22495d93d75c9b4cc24f4]]></item>
+		<item id="/discuz_plugin_dz55625_yuyue_SC_UTF8.xml"><![CDATA[5f48b3871296eae81b36be3d482659f9]]></item>
+		<item id="/discuz_plugin_dz55625_yuyue_TC_BIG5.xml"><![CDATA[60cc7c4978eacb473d435032892282f2]]></item>
+		<item id="/discuz_plugin_dz55625_yuyue_TC_UTF8.xml"><![CDATA[5909dfa29ede3dc63ffc9475e072a594]]></item>
+		<item id="/gngduo.inc.php"><![CDATA[e94e1e38768d79145595737fcdaef8db]]></item>
+		<item id="/images/body.css"><![CDATA[567020d4ee3d59136aea580d65ce4f35]]></item>
+		<item id="/images/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/install.php"><![CDATA[c708a18758fd2551e9d6dd874eecbafb]]></item>
+		<item id="/template/haodian.htm"><![CDATA[05bc53c5d42d40ee7a7efc9c89635b38]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/yuyue_index.htm"><![CDATA[9bf93686e521afb80d8baa7e9f3deccb]]></item>
+		<item id="/uninstall.php"><![CDATA[5e36ab212db867ed89c47a1cdd5253e5]]></item>
+		<item id="/upgrade.php"><![CDATA[79171166ec23fa7860360cebd2dea566]]></item>
+		<item id="/yuyue.inc.php"><![CDATA[0ad9c5abf3a1dbc370287c624343d1c1]]></item>
+		<item id="/yyueadmin.inc.php"><![CDATA[702529a4cb9e143ade363eca2cc6943f]]></item>
+		<item id="/yyue_uid.inc.php"><![CDATA[044f8cd2039424093b248afeed7f0714]]></item>
+	</item>
+</root>

@@ -1,0 +1,89 @@
+<!--{block return}-->
+
+<style type="text/css">
+.gg_full {
+	z-index:{$adindex}; POSITION: absolute; MARGIN: 0px auto; WIDTH: {$adwidth}px; background:#e8e8e8; top:{$adtop}px; left:{$leftright}px;
+}
+.gg_full .gg_fbtn {
+	POSITION: absolute; WIDTH: 19px; DISPLAY: none; HEIGHT: 55px; TOP: 10px; right: -23px
+}
+.gg_full .gg_fbtn A {
+	DISPLAY: block; BACKGROUND: url(source/plugin/dz55625_adone/images/gg_btn.png) no-repeat 0px 0px; HEIGHT: 55px; OVERFLOW: hidden
+}
+.gg_full .gg_fbtn .gg_fclose {
+	BACKGROUND: url(source/plugin/dz55625_adone/images/gg_btn.png) no-repeat -19px 0px
+}
+.gg_full .gg_fcon {
+	DISPLAY: none; HEIGHT: {$adheight}px;
+}
+</style>
+
+<div class="wp" style="POSITION: relative; z-index:{$adindex}">
+    <DIV class="gg_full wrapfix">
+        <DIV class="gg_fbtn">
+            <A style="display: none" class="gg_freplay" href="#"></A>
+            <A class="gg_fclose" href="#"></A>
+        </DIV>
+        <DIV class="gg_fcon"></DIV>
+    </DIV>
+</div>
+
+<script type="text/javascript" src="source/plugin/dz55625_adone/images/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript">
+var jq = jQuery.noConflict(); 
+//首页大广告
+var gg960ShowTime = {$adtime}; 
+var gg960Time = null;
+
+function open_gg960(showBtn){
+    jq('.gg_full .gg_fcon').html(gg960Con).slideDown(300,function(){
+        if(showBtn !== false){
+            jq('.gg_full .gg_fbtn').fadeIn();
+        }
+        if(gg960Time){clearTimeout(gg960Time);}
+        gg960Time = setTimeout(close_gg960,gg960ShowTime);
+    });
+}
+function close_gg960(){
+    jq('.gg_full .gg_fcon').slideUp(500,function(){
+        jq(this).html('');
+        jq('.gg_fclose').hide();
+        jq('.gg_freplay').show();
+    });
+}
+jq('.gg_fclose').click(function(){
+    if(gg960Time){clearTimeout(gg960Time);}
+    close_gg960();
+    return false;
+});
+jq('.gg_freplay').click(function(){
+    if(gg960Time){clearTimeout(gg960Time);}
+    open_gg960(false);
+    jq('.gg_freplay').hide();
+    jq('.gg_fclose').show();
+    return false;
+});
+
+var gg960Con;
+var fullAdUrl = '{$adlink}';
+var fullAdName = '{$adpic}';
+if(fullAdName)
+{
+
+<!--{if $adhuan=='1'}-->
+gg960Con = '<a href="'+fullAdUrl+'" target="_blank"><img width="{$adwidth}" height="{$adheight}" src="'+fullAdName+'"/></a>';
+<!--{/if}-->
+
+<!--{if $adhuan=='2'}-->
+gg960Con = '<embed wmode="transparent" height="{$adheight}" width="{$adwidth}" flashvars="alink1='+fullAdUrl+'" allowscriptaccess="always" quality="high" name="Advertisement" id="Advertisement" style="" src="'+fullAdName+'" type="application/x-shockwave-flash"></embed>';
+<!--{/if}-->
+	
+	setTimeout(open_gg960,1500);
+}
+</script>
+
+
+
+<!--{/block}-->
+

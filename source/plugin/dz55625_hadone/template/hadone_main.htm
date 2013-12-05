@@ -1,0 +1,38 @@
+{template common/header_ajax}
+<div class="dianzhaos">
+    <h2><strong>{lang dz55625_hadone:adaddtitle}</strong><a href="javascript:;" onClick="hideWindow('$_G[gp_handlekey]');" class="flbc" title="{lang close}">{lang close}</a></h2>
+    <ul>
+
+<form method="post" enctype="multipart/form-data" action="plugin.php?id=dz55625_hadone:hadone&applysubmit=true" name="applyform">
+				<input type="hidden" name="referer" value="$_G[referer]">
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+                <input type="hidden" name="newid" value="{$_G['gp_sid']}" />
+                <table width="98%" border="1" bordercolor="#cccccc" style="margin:0 auto">
+
+					<tr>
+						<td width="200" height="35" bgcolor="#F2F2F2" align="center">{lang dz55625_hadone:adtname}</td>
+						<td colspan="2">&nbsp;<input type="text" name="name" style="width:258px; height:22px; line-height:22px;" /></td>
+					</tr>
+
+					<tr>
+						<td height="35" bgcolor="#F2F2F2" align="center">{lang dz55625_hadone:adpicurls}</td>
+						<td colspan="2">&nbsp;<input type="text" name="pic" style="width:258px; height:22px; line-height:22px;" /></td>
+					</tr>
+                    
+					<tr>
+						<td height="35" bgcolor="#F2F2F2" align="center">{lang dz55625_hadone:adpiclink}</td>
+						<td colspan="2">&nbsp;<input type="text" name="tid" style="width:258px; height:22px; line-height:22px;" /></td>
+					</tr>
+				</table>
+                <div style="text-align:center; margin:10px auto 0;">
+               
+					<button type="submit" name="applysubmit" id="applysubmit" value="true" class="pn pnp" /><strong>{lang dz55625_hadone:adtijiao}</strong></button>
+				    <button type="reset" name="sendreset" class="pn pnp" /><strong>{lang dz55625_hadone:adchexiao}</strong></button>
+				</div>
+
+</form>
+
+
+    </ul>
+</div>
+{template common/footer_ajax}

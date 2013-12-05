@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[dz55625_adtwo.plugin]]></item>
+	<item id="RevisionID"><![CDATA[7834]]></item>
+	<item id="SN"><![CDATA[201312042300q1eH3eD3]]></item>
+	<item id="RevisionDateline"><![CDATA[1352444612]]></item>
+	<item id="Data">
+		<item id="/adadmin.inc.php"><![CDATA[8131e557101d751f155140eadf1747a6]]></item>
+		<item id="/adtwo.class.php"><![CDATA[076a415c32ad1018e3fd689fc02f7474]]></item>
+		<item id="/adtwo.inc.php"><![CDATA[819143206f522ecad3b1cea750ab16db]]></item>
+		<item id="/discuz_plugin_dz55625_adtwo_SC_GBK.xml"><![CDATA[227445450857bee5d68e92def3252264]]></item>
+		<item id="/discuz_plugin_dz55625_adtwo_SC_UTF8.xml"><![CDATA[3f5ed85befbebe64f70f2dd88150d54a]]></item>
+		<item id="/discuz_plugin_dz55625_adtwo_TC_BIG5.xml"><![CDATA[6c6553d10bb14b7f374bc02016fa675c]]></item>
+		<item id="/discuz_plugin_dz55625_adtwo_TC_UTF8.xml"><![CDATA[3ad13b93319585f82f478c8890316087]]></item>
+		<item id="/images/01.gif"><![CDATA[018729478dcda9c73ed8ed4e5e04fdeb]]></item>
+		<item id="/images/02.gif"><![CDATA[e0f5e4561e9aa276b90544a1acc75b20]]></item>
+		<item id="/images/body.css"><![CDATA[2055f62388f8ebd4f16ff2763f57757f]]></item>
+		<item id="/images/i.png"><![CDATA[9c4021ea5e7ebd0c779c393c94905093]]></item>
+		<item id="/images/jquery.js"><![CDATA[10092eee563dec2dca82b77d2cf5a1ae]]></item>
+		<item id="/images/lrtk.js"><![CDATA[b8c59509f423aea2b41608cba47d6274]]></item>
+		<item id="/install.php"><![CDATA[d1b04dee6eed4aa2a19265b4f84cb890]]></item>
+		<item id="/template/adtwo_index.htm"><![CDATA[38361b4d7687cf644aecddc752208cc8]]></item>
+		<item id="/template/adtwo_main.htm"><![CDATA[ddb85b58a1010ed9dd72525d4cbc9e47]]></item>
+		<item id="/uninstall.php"><![CDATA[36c8269dbaff9169db2b09356548bfb0]]></item>
+	</item>
+</root>

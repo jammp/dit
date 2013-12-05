@@ -51,7 +51,7 @@ $_config['output']['iecompatible'] = '0';
 
 // --------------------------  CONFIG COOKIE  --------------------------- //
 $_config['cookie']['cookiepre'] = 'KY9H_';
-$_config['cookie']['cookiedomain'] = '';
+$_config['cookie']['cookiedomain'] = '.10-line.com';
 $_config['cookie']['cookiepath'] = '/';
 
 // -------------------------  CONFIG SECURITY  -------------------------- //
