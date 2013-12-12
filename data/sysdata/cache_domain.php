@@ -1,6 +1,6 @@
 <?php
 //Discuz! cache file, DO NOT modify me!
-//Identify: 41423ea32073db2dc7f4e8183947c8d7
+//Identify: d05dd809626a21d77f24424da4c66d16
 
 $domain = array (
   'defaultindex' => 'plugin.php?id=dz55625_haodian:haodian',
@@ -10,9 +10,9 @@ $domain = array (
   ),
   'app' => 
   array (
-    'forum' => 'forum.10-line.com',
-    'mobile' => 'mobile.10-line.com',
-    'default' => 'www.10-line.com',
+    'forum' => '',
+    'mobile' => '',
+    'default' => '',
     'portal' => '',
     'group' => '',
     'home' => '',

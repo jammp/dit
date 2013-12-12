@@ -1,0 +1,71 @@
+/* ----------------------------------
+
+extend_common.css  file for Discuz! X3.0
+
+【未来科技】 
+http://www.veikei.com
+专注于 Discuz模板开发设计等服务。
+详情请 查看 www.veikei.com
+或咨询 客服 QQ 1508085698 1595675868
+
+Author: Veikei
+Created Time: 2012-09-05
+Modified Time: 2012-09-10
+Update Time: 2013-09-11
+
+---------------------------------- */
+
+/*************************************************************************
+* 
+* 公共属性
+*
+**************************************************************************/
+body, input, button, select, textarea { background:#fff;  font: {FONTSIZE} {FONT}; color: {TABLETEXT}; 
+font-family:"Microsoft yahei","微软雅黑", Arial, Helvetica, sans-serif,  "宋体" ; }
+
+body { background:#fff  url({STYLEIMGDIR}/bg_body.jpg) repeat-x center top ;  }
+
+a {outline: none;}
+a:active {star:expression(this.onFocus=this.blur());}
+a:hover { color:#f60; text-decoration:none; }
+:focus { outline:0; }
+
+img, fieldset { border:0; }
+ol, ul, menu { list-style:none; }
+td, th, div { word-break:break-all; word-wrap:break-word }
+* { outline:none } 
+
+
+
+ .wp { margin: 0 auto; width:980px; clear:both; } 
+ #wp .wp { width: auto;}
+
+
+	#toptb { height:36px; line-height: 36px; border:none;  padding: 3px 3px 0 3px;   background: url({STYLEIMGDIR}/bg_toptb.png) repeat-x ;   }
+		#toptb a { float: left;height:30px;  line-height: 30px;  color: #666; }
+		#toptb a.showmenu { padding-right: 15px; }
+		#toptb .pipe { float: left; display: none; }
+#pt { margin-top:0px !important; }
+
+
+/*******************/
+
+/*.wp { margin: 0 auto; width:960px; clear:both; }
+*/
+#wp .wp { width: auto; }
+
+#nv { height: 46px; line-height:46px;  -webkit-border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0; background: url({STYLEIMGDIR}/nv.gif) no-repeat; }
+#nv ul { height: 46px; overflow: hidden; }
+#nv li { float: left; height: 46px; font-weight:normal; font-size: 14px; background: none; background: none /*url({STYLEIMGDIR}/nv_li.gif) no-repeat 100% 0 */; }
+.ie_all #nv li { line-height: 46px; }
+.ie6 #nv li { line-height: 46px; }
+#nv li a { float: left; padding:0 20px; text-align:center; width: auto; height: 46px; display:block; line-height: 46px; color: #fff; font-size:16px; background: none; }
+#nv li span { display: none; }
+#nv li.a { margin-left:0px; background: url({STYLEIMGDIR}/nv_a.gif) repeat-x; }
+#nv li a:hover { color:#fff; text-decoration:none; background: url({STYLEIMGDIR}/nv_a.gif) repeat-x; }
+#nv li.hover a:hover, #nv li.hover a { color:#fff; background: url({STYLEIMGDIR}/nv_a.gif) repeat-x; }
+
+#qmenu { margin-top:10px;  }
+
+.ct2_a, .ct3_a { background-color:#fff; }
+

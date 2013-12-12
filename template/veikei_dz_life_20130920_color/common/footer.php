@@ -1,3 +1,4 @@
+﻿<?php exit; ?>
 	</div>
 <!--{if empty($topic) || ($topic[usefooter])}-->
 	<!--{eval $focusid = getfocus_rand($_G[basescript]);}-->
@@ -75,8 +76,8 @@
 			</p>
 		</div>
 		<div id="frt">
-			<p>Powered by <strong><a href="http://www.10-line.com" target="_blank">10-line</a></strong> <!--{if !empty($_G['setting']['boardlicensed'])}--> <a href="http://license.comsenz.com/?pid=1&host=$_SERVER[HTTP_HOST]" target="_blank">Licensed</a><!--{/if}--></p>
-			<p class="xs0">&copy; 2012-2013 <a href="http://www.10-line.com" target="_blank">10-line Inc.</a></p>
+			<p>Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em>$_G['setting']['version']</em><!--{if !empty($_G['setting']['boardlicensed'])}--> <a href="http://license.comsenz.com/?pid=1&host=$_SERVER[HTTP_HOST]" target="_blank">Licensed</a><!--{/if}--></p>
+			<p class="xs0">&copy; 2001-2013 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a> Templated By <a href="http://www.veikei.com" target="_blank">【未来科技 www.veikei.com】设计</a> </p>
 		</div>
 		<!--{eval updatesession();}-->
 		<!--{if $_G['uid'] && $_G['group']['allowinvisible']}-->
@@ -89,7 +90,7 @@
 	</div>
 <!--{/if}-->
 
-<!--{if !$_G['setting']['bbclosed'] && !$_G['member']['freeze'] && !$_G['member']['groupexpiry']}-->
+<!--{if !$_G['setting']['bbclosed']}-->
 	<!--{if $_G[uid] && !isset($_G['cookie']['checkpm'])}-->
 	<script type="text/javascript" src="home.php?mod=spacecp&ac=pm&op=checknewpm&rand=$_G[timestamp]"></script>
 	<!--{/if}-->
@@ -105,6 +106,7 @@
 	<!--{if $_G[uid] && $_G['member']['allowadmincp'] == 1 && !isset($_G['cookie']['checkpatch'])}-->
 	<script type="text/javascript" src="misc.php?mod=patch&action=checkpatch&rand=$_G[timestamp]"></script>
 	<!--{/if}-->
+
 <!--{/if}-->
 
 <!--{if $_GET['diy'] == 'yes'}-->
@@ -124,7 +126,7 @@
 	<div class="focus plugin" id="plugin_notice"></div>
 	<script type="text/javascript">pluginNotice();</script>
 <!--{/if}-->
-<!--{if !$_G['setting']['bbclosed'] && !$_G['member']['freeze'] && !$_G['member']['groupexpiry'] && $_G['setting']['disableipnotice'] != 1 && $_G['uid'] && !empty($_G['cookie']['lip'])}-->
+<!--{if $_G['uid'] && !empty($_G['cookie']['lip'])}-->
 	<div class="focus plugin" id="ip_notice"></div>
 	<script type="text/javascript">ipNotice();</script>
 <!--{/if}-->
