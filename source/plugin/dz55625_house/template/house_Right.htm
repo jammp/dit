@@ -1,0 +1,33 @@
+<div class="addBtn z cl">
+	<a  href="{if $RewriteStart == 1}{$curl}_add.html{else}plugin.php?id=dz55625_house:house&mod=add{/if}" class="xia3"{$Clickwindow}>{lang dz55625_house:mianfeiadd}</a>
+</div>
+<div class="addBtn z cl" style="margin-top:8px">
+	<a  href="{if $RewriteStart == 1}{$curl}_user.html{else}plugin.php?id=dz55625_house:house_user{/if}" class="xia2"{$Clickwindow}>{lang dz55625_house:fyadmin}</a>
+</div>
+<div class="H_Recommend border z cl">
+	<h2>{lang dz55625_house:tjfangyuan}</h2>
+        {if $cuserco=='0'}
+        	<ul>{lang dz55625_house:izanwu}...</ul>
+        {else}
+        <!--{loop $cuesrs $cuesr}-->
+        <style type="text/css">.H_Recommend{ border-bottom:none}</style>
+            <dl>
+                <dt>
+                <!--{if empty($cuesr[pic])}-->
+                 <a href="{if $RewriteStart == 1}{$curl}_{$cuesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$cuesr[id]}{/if}"{$Clickwindow}><img src="source/plugin/dz55625_house/images/no.gif" /></a>
+                <!--{else}-->
+                    <a href="{if $RewriteStart == 1}{$curl}_{$cuesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$cuesr[id]}{/if}"{$Clickwindow}><img src="{$cuesr[pic]}" /></a>
+                <!--{/if}-->
+                </dt>
+                <dd>
+               		<p>{$cuesr[mingchen]}</p>
+                	<p><a href="{if $RewriteStart == 1}{$curl}_{$cuesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$cuesr[id]}{/if}"{$Clickwindow}>{$cuesr[shi]}{lang dz55625_house:shi}{$cuesr[ting]}{lang dz55625_house:ting}{$cuesr[pingmi]}{lang dz55625_house:pingmitwo}</a></p>
+                    <p><!--{if $cuesr[zujin]=='0'}-->{lang dz55625_house:imianyi}<!--{else}--><em>{$cuesr[zujin]}</em>{$cuesr[danwei]}{lang dz55625_house:yueyue}<!--{/if}--></p>
+                </dd>
+            </dl>
+        <!--{/loop}-->
+        {/if}
+</div>
+<div class="H_Ad z cl">
+	<a href="{$Radlink}" target="_blank"><img src="{$Radimg}" /></a>
+</div>

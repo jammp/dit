@@ -1,0 +1,77 @@
+/*
+	[55625.COM!] (C)2001-2009 55625 Inc.
+	BY QQ:114512039  Lovenr
+*/
+a{ cursor:pointer}
+.b{ border:1px #e3e3e3 solid}
+
+/*ÄÚÈÝÒ³*/
+.houseView{width:960px; height: auto; margin:0 auto 10px}
+.houseView .viewLeft{ width:725px; height:auto;}
+
+.viewLeft #viewL_a{ width:100%; height:372px; font-family:"Î¢ÈíÑÅºÚ","ËÎÌå"; overflow:hidden;  border-top:2px #ED7E47 solid; background:#F9F9F9}
+.viewLeft #viewL_a .topid{width:23px; height:43px; position:absolute; top:0px; left:680px;  background:url(vipIco.png) no-repeat; z-index:9999}
+.viewLeft #viewL_a h2{ width:695px; height:40px; line-height:40px; border-bottom:1px #e3e3e3 dashed; font-size:16px; padding:0 15px; color:#B70000}
+.viewLeft #viewL_a h2 strong{ width:580px; height:40px; float:left}
+.viewLeft #viewL_a h2 span{ float:right; width:95px; font-weight:400; color:#999; font-size:12px; font-family:Arial; background:url(main_bg.png) no-repeat 0 10px; padding-left:20px}
+.viewLeft #viewL_a h2 em{ float:right; width:95px; font-weight:400; color:#999; font-size:12px; background:url(main_bg.png) no-repeat 0 -218px; padding-left:20px}
+.viewLeft #viewL_a h2 em a{color:#2770C0}
+.viewLeft #viewL_a h2 em a:hover{ color:#C00; text-decoration:none}
+.viewLeft #viewL_a dl{ width:695px; padding:15px; background:#F9F9F9; position: relative }
+.viewLeft #viewL_a dl dt{ width:285px; height:246px;}
+.viewLeft #viewL_a dl dt img{ width:285px; height:240px; border:1px #e3e3e3 solid; padding:2px; background:#fff}
+.viewLeft #viewL_a dl dd{ width:390px; height:240px;}
+.viewLeft #viewL_a dl dd p{ width:390px; float:left; height:30px; line-height:30px; color:#666}
+.viewLeft #viewL_a dl dd p strong{ color:#000}
+.viewLeft #viewL_a dl dd p em{ font-family:Arial; font-size:16px; color:#F00; font-weight:bold}
+.viewLeft #viewL_a dl dd p span{ font-family:Arial; font-size:16px; color:#F00;}
+.viewLeft #viewL_a ul{ background: #F5F5F5; width:670px; padding:10px 10px; border:1px #DBDBDB dashed; margin:0 auto}
+.viewLeft #viewL_a ul strong{ float:left; font-weight: 400; color:#2770C0}
+.viewLeft #viewL_a ul span{ float:right; color:#9E9E9E}
+.viewLeft #viewL_a ul a{ color: #F00; padding-left:5px}
+
+.viewLeft #viewL_f{ width:725px; border-top:none; background:#F9F9F9; padding:5px 0}
+.viewLeft #viewL_f ul{ width:400px; float:left; padding-left:5px;}
+.viewLeft #viewL_f dl{ width:95px; float:right;}
+.viewLeft #viewL_f dl a.xi3{background:url(code.png) no-repeat 0px 3px; padding-left:20px; float:left}
+.viewLeft #viewL_b{width:705px; height:auto; font-family:"Î¢ÈíÑÅºÚ","ËÎÌå"; padding:10px; border-top:none; font-size:14px;}
+.viewLeft #viewL_b h2{ width:683px; margin:0 auto; background:#EFFFEC; border:1px #D5EBD0 solid; color:#666; padding:10px; font-weight:400}
+.viewLeft #viewL_b h2 span{ background:url(sprites.png) no-repeat 0px 2px; padding-left:22px; margin-right:8px}
+
+.viewLeft #viewL_b h3{ width:688px; margin:10px auto 0; height:30px; border-bottom:2px #E3E3E3 solid; font-size:14px; padding-left:9px}
+
+.viewLeft #viewL_b ul{ width:100%; margin:10px auto 0;}
+.viewLeft #viewL_b dl{ text-align:center; width:100%; margin:10px auto 0}
+.viewLeft #viewL_b dl hr{ height:1px;border:none;border-top:1px dashed #D5EBD0}
+.viewLeft #viewL_b dl img{ padding:10px}
+.houseView .viewRight{ width:225px; height:auto;}
+.viewRight #v_user{ width:203px; height:48px; padding:10px; background:#F9F9F9; margin-top:10px}
+.viewRight #v_user dl{}
+.viewRight #v_user dl dt{ width:48px; height:48px; float:left}
+.viewRight #v_user dl dd{ width:145px; float:right; line-height:1.8em}
+.viewRight #v_user dl dd p em{ color:#F60; padding:0 5px; font-family:Georgia; font-size:14px}
+
+.viewRight #v_other{width:223px; height:286px; overflow:hidden; border-top: none; border-bottom:none; padding:0 0 8px 0 ; background:#F9F9F9}
+.viewRight #v_other h2{width:223px; border-bottom:1px #e3e3e3 solid; height:30px; background:url(h2_Bg.jpg) repeat-x; line-height:30px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ËÎÌå"}
+.viewRight #v_other h2 strong{ float:left; padding-left:10px}
+.viewRight #v_other h2 span{ float:right; padding-right:10px}
+.viewRight #v_other h2 span a{ font-size:12px; font-weight:400; color: #999; font-family:Arial}
+
+.viewRight #v_other dl{ width:203px; float:left; padding:8px 10px 8px 10px; height:70px; border-bottom:1px #e3e3e3 solid; border-top:1px #fff solid; overflow:hidden}
+.viewRight #v_other dl dt{ float:left}
+.viewRight #v_other dl dt img{ width:81px; height:68px }
+.viewRight #v_other dl dd{ float:right; width:114px; height:63px; padding-top:5px}
+.viewRight #v_other dl dd p em{color:#F60; padding:0 5px 0 0; font-family:Arial; font-size:14px;}
+
+.viewRight #v_common{width:223px; height:auto; overflow:hidden; background:#F9F9F9; overflow:hidden}
+.viewRight #v_common h2{width:223px; height:auto; border-bottom:1px #e3e3e3 solid; height:30px; background:url(h2_Bg.jpg) repeat-x; line-height:30px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ËÎÌå"}
+.viewRight #v_common h2 strong{ float:left; padding-left:10px}
+
+.viewRight #v_common dl{ width:203px; float:left; padding:8px 10px 8px 10px; height:70px; border-bottom:1px #e3e3e3 solid; border-top:1px #fff solid; overflow:hidden}
+.viewRight #v_common dl dt{  width:81px; height:68px; float:left}
+.viewRight #v_common dl dt img{ width:81px; height:68px }
+.viewRight #v_common dl dd{ float:right; width:114px; height:63px; padding-top:5px}
+.viewRight #v_common dl dd p em{color:#F60; padding:0 5px 0 0; font-family:Arial; font-size:14px;}
+.viewRight #v_common ul{ padding:10px}
+
+

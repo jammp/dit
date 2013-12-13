@@ -1,0 +1,66 @@
+  
+<table class="tb tb2 ">
+<tr><th colspan="15" class="partition">{lang dz55625_house:xinxitji}</th></tr>
+</table>
+
+<table class="tb tb2 " style="border-bottom:1px dotted #DEEFFA">
+<tr>
+<td>
+ <form method="post" autocomplete="off" action="$appurl&p=index" name="applyform">
+ <input type="hidden" name="formhash" value="{FORMHASH}" />
+ <input class="keyword" type="text" name="mingchen" value="{lang dz55625_house:jiansuoxq}" onfocus="if(value=='{lang dz55625_house:jiansuoxq}') {value='';}this.style.color='#000';" onblur="if (value=='') {value='{lang dz55625_house:jiansuoxq}';this.style.color='#999';}"  style="height:25px; line-height:25px; margin:0 8px 0 0; padding:0 5px; width:230px; float:left" />
+ <button type="submit" class="btn" style="border:1px #D4D4D4 solid; height:27px; float:left; width:70px; margin:0">{lang dz55625_house:jiansbtn}</button>
+ </form>
+</td></tr></table> 
+
+<table class="tb tb2 ">
+<tr class="header">
+<th width="20"></th><th width="50">{lang dz55625_house:paixu}</th><th width="340">{lang dz55625_house:mingcs}</th><th>{lang dz55625_house:ztqiehuan}</th><th>{lang dz55625_house:shijianss}</th><th>{lang dz55625_house:czipsss}</th>
+</tr>
+
+ 
+ <form method="post" autocomplete="off" action="$appurl&p=index" name="applyform">
+
+ <input type="hidden" name="formhash" value="{FORMHASH}" />
+  {loop $mythreads $key $mythread}
+  
+  <tr class="hover">
+  <td><input type="checkbox" class="checkbox" name="piliang[]" value="{$mythread[id]}"></td>
+    <td><input type="text" name="xnum[{$mythread[id]}]" value="{$mythread[xnum]}" size="4" /></td>
+    <td>{$mythread[mingchen]}&nbsp;{$mythread[shi]}{lang dz55625_house:shi}{$mythread[ting]}{lang dz55625_house:ting}{$mythread[pingmi]}{lang dz55625_house:pingmi}</td>
+    <td>
+    <!--{if empty($mythread[topid])}-->
+    <a href="$appurl&p=topid&d=yes&id=$mythread[id]">{lang dz55625_house:wtuig}</a>  <span class="pipe">|</span>
+    <!--{else}-->
+    <a href="$appurl&p=topid&d=no&id=$mythread[id]" style="color: #F90">{lang dz55625_house:ytuig}</a>  <span class="pipe">|</span>
+    <!--{/if}--> 
+    <!--{if empty($mythread[top])}-->
+    <a href="$appurl&p=top&tj=yes&id=$mythread[id]">{lang dz55625_house:wtuijian}</a>  <span class="pipe">|</span>
+    <!--{else}-->
+    <a href="$appurl&p=top&tj=no&id=$mythread[id]" style="color: #F90">{lang dz55625_house:ytuijian}</a>  <span class="pipe">|</span> 
+    <!--{/if}-->
+     <!--{if empty($mythread[display])}-->
+    <a href="$appurl&p=check&operation=yes&id=$mythread[id]" style="color:#F00">{lang dz55625_house:wshenhe}</a>
+    <!--{else}-->
+    <a href="$appurl&p=check&operation=no&id=$mythread[id]" style="color:#090">{lang dz55625_house:yshenhe}</a>
+    <!--{/if}-->
+    </td>
+    <td>
+    {echo date('y-m-d',$mythread[dateline])}
+    </td>
+    <td>
+    <a href="$appurl&amp;p=edit&amp;id=$mythread[id]">{lang dz55625_house:bianjis}</a> <a href="$appurl&amp;p=del&amp;id=$mythread[id]">{lang dz55625_house:shanchus}</a>
+    </td>
+  </tr>
+  {/loop}
+  <tr>
+  <table>
+  <input type="hidden" name="newid" value="{$mythread[id]}" size="1" />
+&nbsp;<input type="checkbox" onclick="checkAll('prefix', this.form, 'piliang')" class="checkbox" id="chkallxm8R" name="chkall"><label for="chkallxm8R">{lang dz55625_house:quanxuans}</label>&nbsp;&nbsp;<input type="submit" value="{lang dz55625_house:tuiguangz}" name="applysubmzd" id="applysubmzd" class="btn">&nbsp;<input type="submit" value="{lang dz55625_house:tuijianz}" name="applysubmtj" id="applysubmtj" class="btn">&nbsp;<input type="submit" value="{lang dz55625_house:shenhez}" name="applysubmsh" id="applysubmsh" class="btn">&nbsp;<input type="submit" class="btn" id="applysubmdel" name="applysubmdel" value="{lang dz55625_house:shanchus}" />&nbsp;<input type="submit" class="btn" id="applysubmitz" name="applysubmitz" value="{lang dz55625_house:gengxpxu}" />
+  </table>
+  </tr>
+</form>  
+
+</table>
+
+<div class="cuspages right"><div class="pg">{$multis}</div></div>

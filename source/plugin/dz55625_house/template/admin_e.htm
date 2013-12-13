@@ -1,0 +1,126 @@
+<style type="text/css">
+.h2Bt{ width:60px; font-weight:bold;}
+.listx td{ height:30px}
+</style>
+<link rel="stylesheet" type="text/css" href="source/plugin/dz55625_house/images/body.css" />
+<table class="tb tb2 ">
+<tr><th colspan="15" class="partition">{lang dz55625_house:fyeditile}</th></tr>
+</table>
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<input name="pic" type="hidden" id="pic" value="$info[pic]" size="80"  />
+  <table class="tb tb2 listx">
+  
+  
+<tr>
+<td class="h2Bt">{lang dz55625_house:fbuser}</td>
+<td>$info[author]</td>
+</tr>
+
+<tr>
+<td class="h2Bt">{lang dz55625_house:czufangs}</td>
+<td>
+{loop $Fs_class $k $v}
+<label><input type="radio" value="$k" name="fangshi" {if $k==$info[fangshi]}checked="checked"{/if}>$v</label>
+{/loop}
+</td>
+</tr>
+
+<tr>
+<td class="h2Bt">{lang dz55625_house:fengmsz}</td>
+<td><img src="{$info[pic]}" width="140" height="100" /><br /><input type="file" name="file" size="29" /></td>
+</tr>
+
+<tr>
+<td class="h2Bt">{lang dz55625_house:xqumc}</td>
+<td><input name="mingchen" type="text" size="40" class="k" value="{$info[mingchen]}" /></td>
+</tr>
+        
+<tr>
+<td class="h2Bt">{lang dz55625_house:szweizhi}</td>
+<td>
+<select class="ps" name="local_1" onchange="ajaxget('plugin.php?id=dz55625_house:house&mod=add&action=getlocal&lid='+this.value, 'local_2')" />
+<!--{if $local}-->
+<!--{loop $local $lid $localname}-->
+<option value="{$lid}" {if $lid == $localupid} selected {/if} >{$localname['subject']}</option>
+<!--{/loop}-->
+<!--{/if}-->
+</select>
+<span id="local_2" name="local_2">{$localshow}</span>
+</td>
+</tr>
+
+
+<tr>
+<td class="h2Bt">{lang dz55625_house:huxing}</td>
+<td><input name="shi" type="text" size="5" class="k" value="{$info[shi]}" onkeyup="value=this.value.replace(/\D+/g,'')"/>&nbsp;{lang dz55625_house:shi}&nbsp;<input name="ting" type="text" size="5" class="k" value="{$info[ting]}" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:ting}&nbsp;<input name="wei" type="text" size="5" class="k" value="{$info[wei]}" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:wei}&nbsp;<input name="pingmi" type="text" size="5" class="k" value="{$info[pingmi]}" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:pingmi}</td>
+</tr>
+
+<tr>
+<td class="h2Bt">{lang dz55625_house:suoshulc}</td>
+<td>{lang dz55625_house:di}&nbsp;<input name="dic" type="text" size="5" class="k" value="{$info[dic]}" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:ceng}&nbsp;&nbsp;{lang dz55625_house:gong}&nbsp;<input name="gic" type="text" size="5" class="k" value="{$info[gic]}" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:ceng}</td>
+</tr>
+    
+<tr>
+<td class="h2Bt">{lang dz55625_house:suoleixing}</td>
+<td>&nbsp;<select name="leixing">
+{loop $Ls_class $k $v}
+<option value="$k" {if $k==$info[leixing]}selected="selected"{/if}>$v</option>
+{/loop}
+</select>
+<select name="zhuangxiu">
+{loop $Zs_class $k $v}
+<option value="$k" {if $k==$info[zhuangxiu]}selected="selected"{/if}>$v</option>
+{/loop}
+</select>
+<select name="chaoxiang">
+{loop $Cx_class $k $v}
+<option value="$k" {if $k==$info[chaoxiang]}selected="selected"{/if}>$v</option>
+{/loop}
+</select>
+</td>
+</tr>
+    
+<tr>
+<td class="h2Bt">{lang dz55625_house:peizhif}</td>
+<td><ul class="checklist peizhi">
+                    {loop $Pz_class $k $v}
+                    <li><input type="checkbox" value="$k" name="peizhi[]" {if $k==$array[$k]}checked="checked"{/if}>$v </li>
+					{/loop}
+                    </ul></td>
+</tr>
+<tr>
+<td class="h2Bt">{lang dz55625_house:zikomf}</td>
+<td><input name="zujin" type="text" size="10" class="k" value="{$info[zujin]}" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;<select name="danwei">
+            {loop $Dw_class $k $v}
+            <option value="$k" {if $k==$info[danwei]}selected="selected"{/if}>$v</option>
+            {/loop}
+            </select>&nbsp;{lang dz55625_house:yueyue}&nbsp;<select name="yajin">
+{loop $Yj_class $k $v}
+<option value="$k" {if $k==$info[yajin]}selected="selected"{/if}>$v</option>
+{/loop}
+</select>&nbsp;<span>{lang dz55625_house:mianyis}</span></td>
+</tr>
+    
+   
+<tr>
+<td class="h2Bt">{lang dz55625_house:miaoshuf}</td>
+<td><label>
+<textarea name="subject" cols="80" rows="5" id="ainfo">$info[subject]</textarea>
+</label>
+</td>
+</tr>
+
+<tr>
+<td class="tb2s">{lang dz55625_house:lxdianhu}</td>
+<td><input name="tel" type="text" size="30" class="k"  value="{$info[tel]}" onkeyup="value=this.value.replace(/\D+/g,'')"/>&nbsp;&nbsp;{lang dz55625_house:lianxir}&nbsp;&nbsp;<input name="xingming" type="text" size="30" class="k"  value="{$info[xingming]}"/>&nbsp;&nbsp;{lang dz55625_house:liansq}&nbsp;&nbsp;<input name="oicq" type="text" size="30" class="k"  value="{$info[oicq]}" onkeyup="value=this.value.replace(/\D+/g,'')"/></td>
+</tr>   
+
+    
+    <tr>
+      <td>&nbsp;</td>
+      <td><label>
+        <input type="submit" name="Submit" value="{lang dz55625_house:gengxins}" class="btn" />
+      </label></td>
+    </tr>
+  </table>
+</form>

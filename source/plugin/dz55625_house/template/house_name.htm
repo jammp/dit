@@ -1,0 +1,57 @@
+<link rel="stylesheet" type="text/css" href="source/plugin/dz55625_house/images/view.css" />
+
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php"{if $_G['setting']['forumjump']} id="fjump" onmouseover="delayShow(this, 'showForummenu($_G[fid])');" class="showmenu" {/if}>{$_G[setting][navs][2][navname]}</a><em>&raquo;</em><a href="{if $RewriteStart == 1}house.html{else}plugin.php?id=dz55625_house:house{/if}">{$navtitle}</a><em>&raquo;</em>{lang dz55625_house:hyuanxi}
+	</div>
+</div>
+<div class="houseView cl">
+
+<div class="H_lisp_user z b" style="padding-bottom:8px;">
+<!--{if $mythreads}-->
+        {loop $mythreads $key $mythread}
+       
+        <dl class="cl" {if $mythread[topid]=='1'}style="background:#FFFDE6"{else}onmouseover="this.style.background='#FFFDE6'" onmouseout="this.style.background=''"{/if}>
+            <dt class="H_pic">
+             <!--{if $mythread[topid]==1}--><div class="topid"></div><!--{/if}-->
+            <!--{if empty($mythread[pic])}-->
+             <a href="{if $RewriteStart == 1}{$curl}_{$mythread[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$mythread[id]}{/if}"{$Clickwindow}><img src="source/plugin/dz55625_house/images/no.gif" /></a>
+            <!--{else}-->
+            	<a href="{if $RewriteStart == 1}{$curl}_{$mythread[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$mythread[id]}{/if}"{$Clickwindow}><img src="{$mythread[pic]}" /></a>
+            <!--{/if}-->
+            </dt>
+            <dd class="H_title">
+            	<p class="Htit"><a href="{if $RewriteStart == 1}{$curl}_{$mythread[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$mythread[id]}{/if}"{$Clickwindow}>{$mythread[mingchen]}&nbsp;{$mythread[shi]}{lang dz55625_house:shi}{$mythread[ting]}{lang dz55625_house:ting}{$mythread[pingmi]}{lang dz55625_house:pingmi}</a></p>
+            	<p class="Hmsn">{$mythread[subject]}</p>
+                <p class="Hmsz">{$mythread[fangshi]} , {$mythread[dic]}/{$mythread[gic]}{lang dz55625_house:icengss}{$Cx_class[$mythread[chaoxiang]]}</p>
+            </dd>
+            <dd class="H_zuj">
+            	<!--{if $mythread[zujin]!=0}--><b>{$mythread[zujin]}</b>{$mythread[danwei]}{lang dz55625_house:yueyue}<!--{else}-->{lang dz55625_house:imianyi}<!--{/if}-->
+            </dd>
+        </dl>
+        {/loop}
+        <div style="float:left; width:100%; padding-top:10px;">{$multis}</div>
+ <!--{else}-->
+    <ul>{lang dz55625_house:izanwu}</ul>
+<!--{/if}-->
+</div>
+
+<div class="viewRight y">
+<div class="addBtn z cl">
+	<a  href="{if $RewriteStart == 1}{$curl}_add.html{else}plugin.php?id=dz55625_house:house&mod=add{/if}" class="xia3"{$Clickwindow}>{lang dz55625_house:mianfeiadd}</a>
+</div>
+	<div id="v_user" class="z b">
+        <dl>
+            <dt><img src="{$uc}/avatar.php?uid={$mythread[uid]}&size=small" /></dt>
+            <dd>
+                <p>{$mythread[author]}</p>
+                <p>{lang dz55625_house:yfabuxi}</p>
+            </dd>
+        </dl>   
+    </div>
+</div>
+
+
+
+
+</div>

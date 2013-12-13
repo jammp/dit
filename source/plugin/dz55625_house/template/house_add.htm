@@ -1,0 +1,197 @@
+<script type="text/javascript" src="source/plugin/dz55625_house/images/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="source/plugin/dz55625_house/images/swfobject.js"></script>
+<script type="text/javascript" src="source/plugin/dz55625_house/images/jquery.uploadify.v2.1.0.min.js"></script>
+<script type="text/javascript">
+var jq = jQuery.noConflict(); 
+jq(document).ready(function() {
+	jq("#fileInput2").uploadify({
+		'uploader': 'source/plugin/dz55625_house/images/uploadify.swf',
+		'cancelImg': 'source/plugin/dz55625_house/images/cancel.png',
+		'script': 'plugin.php?id=dz55625_house:house_up',
+		'folder': 'source/plugin/dz55625_house/upimg/',
+		'multi': true,
+		'displayData': 'speed',
+		'fileDesc': 'Image(*.jpg;*.gif;*.png)',
+		'fileExt': '*.jpg;*.jpeg;*.gif;*.png',
+		'sizeLimit': {$picdx} ,
+		'queueSizeLimit' :{$picnum}, 
+		'buttonImg': 'source/plugin/dz55625_house/images/browseBtn.png',
+		'width': 88,
+		'height': 29,
+		'rollover': true,
+		onComplete: function (evt, queueID, fileObj, response, data) {
+			getResult(response);
+		}
+	});
+});
+</script>
+<script type="text/javascript">
+	function getResult(content){
+			var board = document.getElementById("divTxt");
+			var boarda = document.getElementById("divTxts");
+			board.style.display="";
+			boarda.style.display="";
+			var newInput = document.createElement("input");
+			newInput.type = "hidden"; 
+			newInput.size = "45"; 
+			newInput.name="filelist[]";
+			var obj = board.appendChild(newInput);
+			var br= document.createElement("br"); 
+			board.appendChild(br);
+			obj.value=content;
+	}
+</script>
+<script language="javascript">
+<!--
+	function validate(heform) {
+		<!--{if $picstart=='1'}-->
+		if(heform.pic.value == "") {
+			showError('{lang dz55625_house:hmshangchuan}');
+			return false;
+		} 
+		<!--{/if}-->
+		if(heform.mingchen.value == "") {
+			showError('{lang dz55625_house:haimeixiaoqu}');
+			return false;
+		} 
+		if(heform.propagandamessage.value == "") {
+			showError('{lang dz55625_house:haimeimiaoshu}');
+			return false;
+		} 
+				if(heform.tel.value == "") {
+			showError('{lang dz55625_house:haimeidianhua}');
+			return false;
+		} 	
+				if(heform.xingming.value == "") {
+			showError('{lang dz55625_house:haimeixingmin}');
+			return false;
+		} 	
+				if(heform.oicq.value == "") {
+			showError('{lang dz55625_house:haimeiqq}');
+			return false;
+		} 			
+		
+		
+		return true;
+	}
+-->
+</SCRIPT>
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php"{if $_G['setting']['forumjump']} id="fjump" onmouseover="delayShow(this, 'showForummenu($_G[fid])');" class="showmenu" {/if}>{$_G[setting][navs][2][navname]}</a><em>&raquo;</em><a href="{if $RewriteStart == 1}house.html{else}plugin.php?id=dz55625_house:house{/if}">{$navtitle}</a><em>&raquo;</em>{lang dz55625_house:xinxifabu}
+	</div>
+</div>
+<div class="houseAdd cl">
+
+<form action="" method="post" enctype="multipart/form-data" name="applyform" id="applyform" onsubmit="return validate(this)">
+<input type="hidden" name="referer" value="$_G[referer]">
+<input type="hidden" name="formhash" value="{FORMHASH}" />
+    <div class="tablesx">
+        <table border="0">
+            <tr>
+                <td class="tb2s">{lang dz55625_house:czufangs}</td>
+                <td style="width:874px">
+                    {loop $Fs_class $k $v}
+                    <label><input type="radio" value="$k" name="fangshi" id="fangshi">$v</label>
+                    {/loop}
+                </td>
+            </tr>
+         <tr>
+            <td class="tb2s">{lang dz55625_house:fengmsz}</td>
+            <td>&nbsp;<input type="file" name="file" size="29" id="pic" />&nbsp;<span> {lang dz55625_house:yunxugeshi}{echo round($picdx/1000)}K</span></td>
+        </tr>
+        <tr>
+            <td class="tb2s">{lang dz55625_house:xqumc}</td>
+            <td>&nbsp;<input name="mingchen" type="text" size="40" class="k" id="mingchen" /></td>
+        </tr>
+        <tr>
+            <td class="tb2s">{lang dz55625_house:szweizhi}</td>
+            <td>&nbsp;<select class="ps" name="local_1" onchange="ajaxget('plugin.php?id=dz55625_house:house&mod=add&action=getlocal&lid='+this.value, 'local_2')" />
+            <!--{if $local}-->
+            <!--{loop $local $lid $localname}-->
+            <option value="{$lid}" {if $lid == $localupid} selected {/if} >{$localname['subject']}</option>
+            <!--{/loop}-->
+            <!--{/if}-->
+            </select>
+            <span id="local_2" name="local_2">{$localshow}</span>
+        </tr>
+        <tr>
+            <td class="tb2s">{lang dz55625_house:huxing}</td>
+            <td>&nbsp;<input name="shi" type="text" size="5" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:shi}&nbsp;<input name="ting" type="text" size="5" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:ting}&nbsp;<input name="wei" type="text" size="5" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:wei}&nbsp;<input name="pingmi" type="text" size="5" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:pingmi}</td>
+        </tr>
+        <tr>
+            <td class="tb2s">{lang dz55625_house:suoshulc}</td>
+            <td>&nbsp;{lang dz55625_house:di}&nbsp;<input name="dic" type="text" size="5" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:ceng}&nbsp;&nbsp;{lang dz55625_house:gong}&nbsp;<input name="gic" type="text" size="5" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;{lang dz55625_house:ceng}</td>
+        </tr>
+        <tr>
+            <td class="tb2s">{lang dz55625_house:suoleixing}</td>
+            <td>&nbsp;<select name="leixing">
+            {loop $Ls_class $k $v}
+            <option value="$k">$v</option>
+            {/loop}
+            </select>
+            <select name="zhuangxiu">
+            {loop $Zs_class $k $v}
+            <option value="$k">$v</option>
+            {/loop}
+            </select>
+            <select name="chaoxiang">
+            {loop $Cx_class $k $v}
+            <option value="$k">$v</option>
+            {/loop}
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="tb2x">{lang dz55625_house:peizhif}</td>
+            <td>
+                    <ul class="checklist peizhi">
+                    {loop $Pz_class $k $v}
+                    <li><input type="checkbox" value="$k" name="peizhi[]">$v</li>
+					{/loop}
+                    </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="tb2s">{lang dz55625_house:zikomf}</td>
+            <td>&nbsp;<input name="zujin" type="text" size="10" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;<select name="danwei">
+            {loop $Dw_class $k $v}
+            <option value="$k">$v</option>
+            {/loop}
+            </select>&nbsp;{lang dz55625_house:yueyue}&nbsp;<select name="yajin">
+            {loop $Yj_class $k $v}
+            <option value="$k">$v</option>
+            {/loop}
+            </select>&nbsp;<span>{lang dz55625_house:mianyis}</span></td>
+        </tr>
+        <tr>
+            <td class="tb2x">{lang dz55625_house:miaoshuf}</td>
+            <td><div class="tedt" style="margin:0 auto; width:865px">
+            <div class="bar">
+            <!--{eval $seditor = array('propaganda', array('bold', 'color', 'link'));}-->
+            <!--{subtemplate common/seditor}-->
+            </div>
+            <div class=area>
+            <textarea id="propagandamessage" class="pt" rows="5" cols="40" name="subject"></textarea>
+            </div>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="tb2x">{lang dz55625_house:duotuzshi}</td>
+            <td style="padding-top:5px">&nbsp;<input id="fileInput2" name="fileInput2" type="file" class="z" /><div class="fileInput5"><div id="divTxts" style="display:none">{lang dz55625_house:yishangc}</div><input type="button" value="{lang dz55625_house:qingchup}" onClick="javascript:jq('#fileInput2').uploadifyClearQueue();" id="fileInput3" ><input type="button" value="{lang dz55625_house:qxiansc}" onClick="javascript:jq('#fileInput2').uploadifyUpload();" id="fileInput4" ></div></td>
+        </tr>
+                <tr style="border-bottom:none">
+            <td class="tb2s">{lang dz55625_house:lxdianhu}</td>
+            <td>&nbsp;<input name="tel" id="tel" type="text" size="40" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" />&nbsp;&nbsp;{lang dz55625_house:lianxir}&nbsp;&nbsp;<input name="xingming" id="xingming" type="text" size="30" class="k" />&nbsp;&nbsp;{lang dz55625_house:liansq}&nbsp;&nbsp;<input name="oicq" id="oicq" type="text" size="30" class="k" onkeyup="value=this.value.replace(/\D+/g,'')" /></td>
+        </tr>
+
+        </table>
+    </div>
+	<div id="divTxt" style="display:none"></div>
+    <div style="text-align:center; margin:10px auto 0;">
+        <button type="submit" name="applysubmit" id="applysubmit" value="true" class="pn pnp" /><strong>{lang dz55625_house:quedings}</strong></button>
+        <button type="reset" name="sendreset" class="pn pnp" /><strong>{lang dz55625_house:chexiaos}</strong></button>
+    </div>
+</form>
+</div>

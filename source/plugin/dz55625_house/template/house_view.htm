@@ -1,0 +1,145 @@
+<link rel="stylesheet" type="text/css" href="source/plugin/dz55625_house/images/view.css" />
+
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php"{if $_G['setting']['forumjump']} id="fjump" onmouseover="delayShow(this, 'showForummenu($_G[fid])');" class="showmenu" {/if}>{$_G[setting][navs][2][navname]}</a><em>&raquo;</em><a href="{if $RewriteStart == 1}house.html{else}plugin.php?id=dz55625_house:house{/if}">{$navtitle}</a><em>&raquo;</em>{lang dz55625_house:xinxickan}
+	</div>
+</div>
+<div class="houseView cl">
+<script>
+//function openCloseTab(obj){alert(obj.target)}
+//function openCloseFolder(obj){alert(obj.id)}
+window.onload=function(){
+  var obj = document.getElementById("m1");
+  var obj1 = obj.parentNode.getElementsByTagName("ul")[0].getElementsByTagName("a")[0];
+  if(document.all){
+    obj.click();   
+    obj1.click();   
+  }
+  else{
+    obj.onclick();
+    obj1.onclick();
+  }   
+}
+</script>
+<!--{loop $mythreads $mythread}-->
+
+<div class="viewLeft z">
+	
+    <div id="viewL_a" class="z b">
+    	<h2><strong>{$mythread[mingchen]}&nbsp;{$mythread[shi]}{lang dz55625_house:shi}{$mythread[ting]}{lang dz55625_house:ting}{$mythread[pingmi]}{lang dz55625_house:pingmitwo} </strong> <!--{if $_G[uid] != $mythread[uid] }--><span>{lang dz55625_house:addtimez}{$mythread[dateline]}</span><!--{else}--><em><a href="plugin.php?id=dz55625_house:house_user&p=edit&sid={$mythread[id]}">{lang dz55625_house:bianjidqx}</a></em><!--{/if}--></h2>
+        <dl class="cl">
+         <!--{if $mythread[topid]==1}--><div class="topid"></div><!--{/if}-->
+        	<dt class="z">
+            <!--{if empty($mythread[pic])}-->
+             <img src="source/plugin/dz55625_house/images/no2.gif" />
+            <!--{else}-->
+            	<img src="{$mythread[pic]}" />
+            <!--{/if}-->
+            </dt>
+            <dd class="y">
+           		<p><strong>{lang dz55625_house:vfangshi}</strong><!--{if !empty($mythread[fangshi])}-->{$mythread[fangshi]}<!--{else}-->{lang dz55625_house:izhengt}<!--{/if}--></p>
+            	<p><strong>{lang dz55625_house:vjiage}</strong><!--{if $mythread[zujin]=='0'}-->{$mythread[yajin]}<!--{else}--><em>{$mythread[zujin]}</em> {$mythread[danwei]}{lang dz55625_house:yueyue}&nbsp;&nbsp;{$mythread[yajin]}<!--{/if}--></p>
+                <p><strong>{lang dz55625_house:vhuxing}</strong>{$mythread[shi]}{lang dz55625_house:shi} {$mythread[ting]}{lang dz55625_house:ting} {$mythread[wei]}{lang dz55625_house:wei} {$mythread[pingmi]}{lang dz55625_house:m2}</p>
+                <p><strong>{lang dz55625_house:vqingk}</strong>{$mythread[leixing]} / {$mythread[zhuangxiu]} / {lang dz55625_house:vchaoxiang}{$mythread[chaoxiang]}</p>
+                <p><strong>{lang dz55625_house:vlouceng}</strong>{lang dz55625_house:di}{$mythread[dic]}{lang dz55625_house:ceng}/{lang dz55625_house:gong}{$mythread[gic]}{lang dz55625_house:ceng}</p>
+                <p><strong>{lang dz55625_house:vdiqu}</strong>{$mythread[did]}</p>
+                <p><strong>{lang dz55625_house:vlianxi}</strong><span><img src="plugin.php?id=dz55625_house:house_tel&sid=$_G['gp_sid'] " /></span> <!--{if !empty($mythread[xingming])}-->( {lang dz55625_house:vlianxir}{$mythread[xingming]} )<!--{/if}--></p>
+                <p><strong>{lang dz55625_house:vgoutong}</strong><a target="_blank" href=tencent://message/?uin={$mythread['oicq']}&Site=$_G['setting'][siteurl]&Menu=yes>
+<img src=http://wpa.qq.com/pa?p=5:{$mythread['oicq']}:16 alt="{lang dz55625_house:liansq}" border="0" align="absmiddle">
+</a></p>
+
+            </dd>
+        </dl>
+        <ul class="cl"><strong>( {lang dz55625_house:vguishud}<!--{if !empty($urltel)}-->{$urltel}<!--{else}-->{lang dz55625_house:vwucihao}<!--{/if}--> )</strong> <span>{lang dz55625_house:vtixings} <a onclick="showWindow('miscreport', 'misc.php?mod=report&amp;url='+REPORTURL);return false;" href="javascript:;">{lang dz55625_house:vqubaoxs}</a></span></ul>
+    </div>
+    
+    
+    <div id="viewL_f" class="z b">
+    <ul>
+<DIV class=bshare-custom><A class=bshare-qzone href="javascript:void(0);"></A><A class=bshare-sinaminiblog href="javascript:void(0);"></A><A class=bshare-renren href="javascript:void(0);"></A><A class=bshare-qqmb href="javascript:void(0);"></A><A class=bshare-douban href="javascript:void(0);"></A><A class=bshare-qqxiaoyou href="javascript:void(0);"></A><A class=bshare-qqshuqian href="javascript:void(0);"></A><A class=bshare-itieba href="javascript:void(0);"></A><A class=bshare-51 href="javascript:void(0);"></A><A class=bshare-tianya href="javascript:void(0);"></A><A class=bshare-sohuminiblog href="javascript:void(0);"></A><A class=bshare-neteasemb href="javascript:void(0);"></A><A class=bshare-kaixin001 href="javascript:void(0);"></A><A class="bshare-more bshare-more-icon more-style-sharethis" buttonIndex="0"></A><SPAN class="BSHARE_COUNT bshare-share-count">0</SPAN></DIV>
+<SCRIPT type=text/javascript charset=utf-8 src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=fba4e86d-5fec-4493-b554-d7b3b4736eb4&amp;pophcol=2&amp;lang=zh"></SCRIPT>
+<SCRIPT type=text/javascript charset=utf-8 src="http://static.bshare.cn/b/bshareC0.js"></SCRIPT>
+    </ul>
+    <dl><a href="javascript:;" onclick="showWindow('code', 'plugin.php?id=dz55625_house:house_rw&action=code&sid={$_G[gp_sid]}', 'get', 0)" class="xi3">{lang dz55625_house:erweima}</a></dl>
+    </div>
+    <div id="viewL_b" class="z b">
+        <h2><strong>{lang dz55625_house:vpeizhif}</strong><!--{if empty($mythread[peizhi])}-->{lang dz55625_house:izanwu}<!--{else}-->{loop $peizh $k $v}<span value="">{$Pz_class[$v]}</span>{/loop}<!--{/if}--></h2>
+        <h3>{lang dz55625_house:vmiaoshu}</h3>
+        <ul>
+        <!--{if empty($mythread[subject])}-->{lang dz55625_house:izanwu}<!--{else}-->{$mythread[subject]}<!--{/if}-->
+        </ul>
+        <dl>
+        	<!--{loop $psers $pser}-->
+            	<hr><img src="{$pser[img]}"/>
+            <!--{/loop}-->
+        </dl>
+    </div>
+    
+</div>
+<!--{/loop}-->
+
+<div class="viewRight y">
+<div class="addBtn z cl">
+	<a  href="{if $RewriteStart == 1}{$curl}_add.html{else}plugin.php?id=dz55625_house:house&mod=add{/if}" class="xia3"{$Clickwindow}>{lang dz55625_house:mianfeiadd}</a>
+</div>
+
+	<div id="v_user" class="z b">
+        <dl>
+            <dt><img src="{$uc}/avatar.php?uid={$mythread[uid]}&size=small" /></dt>
+            <dd>
+                <p>{$mythread[author]}</p>
+                <p>{lang dz55625_house:vfabuxin}</p>
+            </dd>
+        </dl>   
+    </div>
+    <div id="v_other" class="z b">
+    	<h2><strong>{lang dz55625_house:vqitafyuan}</strong><span><a href="{if $RewriteStart == 1}{$curl}_uid_{$mythread[uid]}.html{else}plugin.php?id=dz55625_house:house&mod=user&uid={$mythread[uid]}{/if}"{$Clickwindow}>+more+</a></span></h2>
+        <!--{loop $uesrs $uesr}-->
+            <dl>
+                <dt>
+                <!--{if empty($uesr[pic])}-->
+                 <a href="{if $RewriteStart == 1}{$curl}_{$uesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$uesr[id]}{/if}"{$Clickwindow}><img src="source/plugin/dz55625_house/images/no.gif" /></a>
+                <!--{else}-->
+                    <a href="{if $RewriteStart == 1}{$curl}_{$uesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$uesr[id]}{/if}"{$Clickwindow}><img src="{$uesr[pic]}" /></a>
+                <!--{/if}-->
+                </dt>
+                <dd>
+               		<p>{$uesr[mingchen]}</p>
+                	<p><a href="{if $RewriteStart == 1}{$curl}_{$uesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$uesr[id]}{/if}"{$Clickwindow}>{$uesr[shi]}{lang dz55625_house:shi}{$uesr[ting]}{lang dz55625_house:ting}{$uesr[pingmi]}{lang dz55625_house:pingmitwo}</a></p>
+                    <p><!--{if $uesr[zujin]=='0'}-->{lang dz55625_house:imianyi}<!--{else}--><em>{$uesr[zujin]}</em>{$uesr[danwei]}{lang dz55625_house:yueyue}<!--{/if}--></p>
+                </dd>
+            </dl>
+        <!--{/loop}-->
+    </div>
+    <div id="v_common" class="z b">
+        <h2><strong>{lang dz55625_house:vtuijianfy}</strong></h2>
+        {if $cuserco=='0'}
+        	<ul>{lang dz55625_house:izanwu}</ul>
+        {else}
+        <!--{loop $cuesrs $cuesr}-->
+        <style type="text/css">#v_common{ border-bottom:none}</style>
+            <dl>
+                <dt>
+                <!--{if empty($cuesr[pic])}-->
+                 <a href="{if $RewriteStart == 1}{$curl}_{$cuesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$cuesr[id]}{/if}"{$Clickwindow}><img src="source/plugin/dz55625_house/images/no.gif" /></a>
+                <!--{else}-->
+                    <a href="{if $RewriteStart == 1}{$curl}_{$cuesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$cuesr[id]}{/if}"{$Clickwindow}><img src="{$cuesr[pic]}" /></a>
+                <!--{/if}-->
+                </dt>
+                <dd>
+               		<p>{$cuesr[mingchen]}</p>
+                	<p><a href="{if $RewriteStart == 1}{$curl}_{$cuesr[id]}.html{else}plugin.php?id=dz55625_house:house&mod=view&sid={$cuesr[id]}{/if}"{$Clickwindow}>{$cuesr[shi]}{lang dz55625_house:shi}{$cuesr[ting]}{lang dz55625_house:ting}{$cuesr[pingmi]}{lang dz55625_house:pingmitwo}</a></p>
+                    <p><!--{if $cuesr[zujin]=='0'}-->{lang dz55625_house:imianyi}<!--{else}--><em>{$cuesr[zujin]}</em>{$cuesr[danwei]}{lang dz55625_house:yueyue}<!--{/if}--></p>
+                </dd>
+            </dl>
+        <!--{/loop}-->
+        {/if}
+    </div>
+</div>
+
+
+
+
+
+</div>

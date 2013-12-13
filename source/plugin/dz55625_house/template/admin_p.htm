@@ -1,0 +1,19 @@
+<table class="tb tb2 ">
+<tr><th colspan="15" class="partition">{lang dz55625_house:picadmin}</th></tr>
+</table>
+<table class="tb tb2 ">
+<tr class="header">
+<th>{lang dz55625_house:picxians}</th><th>{lang dz55625_house:pictimes}</th><th>{lang dz55625_house:pictool}</th>
+</tr>
+{loop $mythreads $key $mythread}
+
+<tr class="hover">
+    <td><img src="$mythread['img']" width="120" height="90" /></td>
+    <td>{echo date('y-m-d',$mythread[dateline])}</td>
+    <td>
+    	<a href="$appurl&amp;p=del&amp;id=$mythread[id]">{lang dz55625_house:shanchus}</a>
+    </td>
+  </tr>
+{/loop}
+<table>  
+{$multis}

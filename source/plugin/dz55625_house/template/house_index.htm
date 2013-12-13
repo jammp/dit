@@ -1,0 +1,30 @@
+<!--{template common/header}-->
+<link rel="stylesheet" type="text/css" href="source/plugin/dz55625_house/images/body.css" />
+<!--{if !$_G['gp_mod']}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php"{if $_G['setting']['forumjump']} id="fjump" onmouseover="delayShow(this, 'showForummenu($_G[fid])');" class="showmenu" {/if}>{$_G[setting][navs][2][navname]}</a><em>&raquo;</em><a href="{if $RewriteStart == 1}house.html{else}plugin.php?id=dz55625_house:house{/if}">{$navtitle}</a>
+	</div>
+</div>
+
+<!--{if $hus != $stu || $housekign != $hurlz}-->
+<div class="haomsn cl">{lang dz55625_house:dbmsn}</div>
+<!--{else}-->
+<div class="houseAr cl">
+    <div id="houseLeft" class="z">
+    	<!--{template dz55625_house:house_Left}-->
+    </div>
+    <div id="houseRight" class="y">
+    	<!--{template dz55625_house:house_Right}-->
+    </div>
+</div>
+<!--{/if}-->
+<!--{elseif $_G[gp_mod] == 'add'}-->
+	<!--{template dz55625_house:house_add}-->
+<!--{elseif $_G[gp_mod] == 'view'}-->    
+    <!--{template dz55625_house:house_view}-->
+<!--{elseif $_G[gp_mod] == 'user'}-->    
+    <!--{template dz55625_house:house_name}-->
+<!--{/if}-->
+
+<!--{template common/footer}-->         
