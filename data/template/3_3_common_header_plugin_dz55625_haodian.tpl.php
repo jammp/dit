@@ -1,8 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/header_common.htm', 1386941759, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
-|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/header_qmenu.htm', 1386941759, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
-|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/pubsearchform.htm', 1386941759, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
+|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/header_common.htm', 1386943410, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
+|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/header_qmenu.htm', 1386943410, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
+|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/pubsearchform.htm', 1386943410, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
