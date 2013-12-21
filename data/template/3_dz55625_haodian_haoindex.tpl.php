@@ -1,6 +1,6 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('haoindex');
 0
-|| checktplrefresh('./source/plugin/dz55625_haodian/template/haoindex.htm', './template/default/common/seditor.htm', 1386943410, 'dz55625_haodian', './data/template/3_dz55625_haodian_haoindex.tpl.php', './source/plugin/dz55625_haodian/template', 'haoindex')
+|| checktplrefresh('./source/plugin/dz55625_haodian/template/haoindex.htm', './template/default/common/seditor.htm', 1387023326, 'dz55625_haodian', './data/template/3_dz55625_haodian_haoindex.tpl.php', './source/plugin/dz55625_haodian/template', 'haoindex')
 ;?>
 <?php if(!$_G['gp_mod']) { include template('common/header'); } elseif($_G['gp_mod'] == 'view') { include template('dz55625_haodian:header'); } elseif($_G['gp_mod'] == 'add') { include template('common/header'); } ?>
 <link rel="stylesheet" type="text/css" href="source/plugin/dz55625_haodian/images/body.css" />

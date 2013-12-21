@@ -57,7 +57,7 @@ GMT<?php echo $_G['timenow']['offset'];?>, <?php echo $_G['timenow']['time'];?>
 </p>
 </div>
 <div id="frt">
-<p class="xs0">&copy; 2012-2013 <a href="http://www.10-line.com" target="_blank">10-line Inc.</a></p>
+<p class="xs0">&copy; 2013 <a href="http://www.10-line.com" target="_blank">10-line Inc.</a></p>
 </div><?php updatesession();?><?php if($_G['uid'] && $_G['group']['allowinvisible']) { ?>
 <script type="text/javascript">
 var invisiblestatus = '<?php if($_G['session']['invisible']) { ?>隐身<?php } else { ?>在线<?php } ?>';

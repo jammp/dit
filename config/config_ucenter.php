@@ -4,11 +4,11 @@
 define('UC_CONNECT', 'mysql');
 
 define('UC_DBHOST', 'localhost');
-define('UC_DBUSER', 'root');
-define('UC_DBPW', 'root');
-define('UC_DBNAME', 'ultrax20131203');
+define('UC_DBUSER', 'luruxian');
+define('UC_DBPW', 'qwe729222');
+define('UC_DBNAME', 'luruxian');
 define('UC_DBCHARSET', 'utf8');
-define('UC_DBTABLEPRE', '`ultrax20131203`.pre_ucenter_');
+define('UC_DBTABLEPRE', '`luruxian`.pre_ucenter_');
 define('UC_DBCONNECT', 0);
 
 define('UC_CHARSET', 'utf-8');

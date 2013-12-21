@@ -1,15 +1,15 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/header_common.htm', 1387023326, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
-|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/header_qmenu.htm', 1387023326, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
-|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/pubsearchform.htm', 1387023326, '3', './data/template/3_3_common_header_plugin_dz55625_haodian.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_plugin_dz55625_haodian')
+|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/header_common.htm', 1386992050, '3', './data/template/3_3_common_header_member_register.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_member_register')
+|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/header_qmenu.htm', 1386992050, '3', './data/template/3_3_common_header_member_register.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_member_register')
+|| checktplrefresh('./template/veikei_dz_life_20130920_color/common/header.htm', './template/default/common/pubsearchform.htm', 1386992050, '3', './data/template/3_3_common_header_member_register.tpl.php', './template/veikei_dz_life_20130920_color', 'common/header_member_register')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET;?>" />
 <?php if($_G['config']['output']['iecompatible']) { ?><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE<?php echo $_G['config']['output']['iecompatible'];?>" /><?php } ?>
-<title><?php if(!empty($navtitle)) { ?><?php echo $navtitle;?> - <?php } if(empty($nobbname)) { ?> <?php echo $_G['setting']['bbname'];?> <?php } ?></title>
+<title><?php if(!empty($navtitle)) { ?><?php echo $navtitle;?> - <?php } if(empty($nobbname)) { ?> <?php echo $_G['setting']['bbname'];?> - <?php } ?> Powered by Discuz!</title>
 <?php echo $_G['setting']['seohead'];?>
 
 <meta name="keywords" content="<?php if(!empty($metakeywords)) { echo dhtmlspecialchars($metakeywords); } ?>" />
